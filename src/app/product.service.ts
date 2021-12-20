@@ -7,7 +7,7 @@ export class ProductService {
 
   constructor(private http: HttpClient) {}
 
-  getAll(url){
+  getAll(url: string){
     return this.http.get(url);
   }
 }
